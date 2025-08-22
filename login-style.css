@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  :root {
+    --gold-400: #ffc033;
+    --gold-500: #ffb000;
+    --gold-300: #ffd066;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logo svg {
+    width: 48px;
+    height: 48px;
+    color: var(--gold-400);
+  }
+  
+  .header h1 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+  }
+  
+  .input-group input::placeholder {
+    color: #6b7280;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--gold-400);
+    box-shadow: 0 0 0 2px var(--gold-500);
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.2s;
+  }
+  
+  .toggle-password:hover {
+    color: var(--gold-400);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #d1d5db;
+    font-size: 0.875rem;
+  }
+  
+  .remember-me input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    accent-color: var(--gold-400);
+  }
+  
+  .forgot-password {
+    color: var(--gold-400);
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .forgot-password:hover {
+    color: var(--gold-300);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--gold-400);
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 1.5rem 0;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--gold-500);
+  }
+  
+  .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px black, 0 0 0 4px var(--gold-400);
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-link p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .signup-link a {
+    color: var(--gold-400);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .signup-link a:hover {
+    color: var(--gold-300);
+  }
+  
+  .categories {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .categories p {
+    color: #6b7280;
+    font-size: 0.75rem;
+  }
